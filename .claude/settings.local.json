@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git push upstream main)"
+      "Bash(git push upstream main)",
+      "Bash(git add \"semblanzas/CV_VICTOR_JIMENEZ.docx.pdf\" nucleo.html)",
+      "Bash(git commit:*)",
+      "Bash(git push origin main)"
     ]
   }
 }
