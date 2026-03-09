@@ -53,7 +53,7 @@ body {
     width: 100%;
 }
 
-.nav-bar ul {
+.nav-bar > ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -62,13 +62,13 @@ body {
     padding: 0;
 }
 
-.nav-bar ul li {
+.nav-bar > ul > li {
     flex: 1;
 }
 
-.nav-bar ul li a {
+.nav-bar > ul > li > a {
     display: block;
-    color: #fff; /* Texto blanco */
+    color: #fff;
     text-decoration: none;
     padding: 14px 15px;
     text-align: center;
@@ -79,16 +79,76 @@ body {
     border-bottom: 4px solid transparent;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar > ul > li > a:hover {
     background-color: #2a5a8c;
-    border-bottom: 4px solid #e8a020; /* Linea naranja al pasar el mouse */
+    border-bottom: 4px solid #e8a020;
 }
 
 /* Clase para la pestaña activa actual */
-.nav-bar ul li a.active {
+.nav-bar > ul > li > a.active {
     background-color: #2a5a8c;
     border-bottom: 4px solid #e8a020;
     font-weight: 700;
+}
+
+/* ── Dropdown submenu ── */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a::after {
+    content: ' ∨';
+    font-size: 11px;
+}
+
+.nav-dropdown.open > a {
+    background-color: #e8a020;
+    border-bottom: 4px solid #e8a020;
+}
+
+.nav-dropdown.open > a::after {
+    content: ' ∧';
+}
+
+.nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 210px;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    z-index: 1100;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    border-top: 3px solid #e8a020;
+}
+
+.nav-dropdown.open .nav-submenu {
+    display: block;
+}
+
+.nav-submenu li {
+    flex: none;
+}
+
+.nav-submenu li a {
+    display: block;
+    padding: 13px 20px;
+    color: #1a3a5c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: none;
+    text-align: left;
+    transition: background-color 0.15s;
+}
+
+.nav-submenu li a:hover {
+    background-color: #f0f4f8;
+    border-bottom: none;
+    color: #e8a020;
 }
 
 /* =========================================
@@ -529,6 +589,69 @@ body {
 }
 
 /* =========================================
+   INVESTIGACION - TABS
+   ========================================= */
+.investigacion-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.investigacion-section h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.inv-tabs {
+    display: flex;
+    border-bottom: 3px solid #1a3a5c;
+    margin-bottom: 30px;
+}
+
+.inv-tab-btn {
+    padding: 12px 30px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.inv-tab-btn:hover {
+    color: #1a3a5c;
+}
+
+.inv-tab-btn.active {
+    color: #1a3a5c;
+    border-bottom-color: #e8a020;
+}
+
+.inv-tab-content {
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    min-height: 200px;
+}
+
+.inv-tab-content.active {
+    display: block;
+}
+
+.inv-placeholder {
+    color: #888;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* =========================================
    9. FOOTER (PIE DE PAGINA)
    ========================================= */
 .footer {
@@ -627,11 +750,11 @@ body {
     }
 
     /* Navegación */
-    .nav-bar ul {
+    .nav-bar > ul {
         flex-direction: column;
     }
-    
-    .nav-bar ul li a {
+
+    .nav-bar > ul > li > a {
         padding: 12px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
