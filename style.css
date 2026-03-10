@@ -96,18 +96,9 @@ body {
     position: relative;
 }
 
-.nav-dropdown > a::after {
-    content: ' ∨';
-    font-size: 11px;
-}
-
 .nav-dropdown.open > a {
     background-color: #1a3a5c;
     border-bottom: 4px solid #e8a020;
-}
-
-.nav-dropdown.open > a::after {
-    content: ' ∧';
 }
 
 .nav-submenu {
