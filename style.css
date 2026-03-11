@@ -75,13 +75,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    transition: background-color 0.2s;
     border-bottom: 4px solid transparent;
-}
-
-.nav-bar > ul > li > a:hover {
-    background-color: #2a5a8c;
-    border-bottom: 4px solid #e8a020;
 }
 
 /* Clase para la pestaña activa actual */
@@ -133,13 +127,6 @@ body {
     font-weight: 500;
     border-bottom: none;
     text-align: left;
-    transition: background-color 0.15s;
-}
-
-.nav-submenu li a:hover {
-    background-color: #f0f4f8;
-    border-bottom: none;
-    color: #e8a020;
 }
 
 /* =========================================
@@ -301,11 +288,6 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.convocatoria-header:hover {
-    background-color: #f0f4f8;
 }
 
 .convocatoria-header h3 {
@@ -337,13 +319,8 @@ body {
     font-weight: 600;
     margin-left: 15px;
     cursor: pointer;
-    transition: background-color 0.2s;
     white-space: nowrap;
     border: none;
-}
-
-.convocatoria-toggle:hover {
-    background-color: #2a5a8c;
 }
 
 /* Cuerpo de la convocatoria (Oculto por defecto) */
@@ -449,14 +426,8 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-}
-
-.semestre-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
 .semestre-tesis {
@@ -611,11 +582,6 @@ body {
     cursor: pointer;
     border-bottom: 3px solid transparent;
     margin-bottom: -3px;
-    transition: color 0.2s, border-color 0.2s;
-}
-
-.inv-tab-btn:hover {
-    color: #1a3a5c;
 }
 
 .inv-tab-btn.active {
@@ -911,12 +877,6 @@ body {
     margin-bottom: 30px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     border-radius: 0 8px 8px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lineas-bloque:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
 }
 
 .lineas-bloque h4 {
@@ -1001,9 +961,6 @@ body {
     transform: rotate(-180deg);
 }
 
-.lgac-btn-titulo:hover {
-    background-color: #122a44;
-}
 
 .lgac-btn-desc {
     background: #f5f8fc;
@@ -1039,12 +996,6 @@ body {
     margin-bottom: 30px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     border-radius: 0 8px 8px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.asignatura-bloque:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
 }
 
 .asignatura-bloque h4 {
@@ -1094,14 +1045,7 @@ body {
     border-left: 3px solid #e8a020;
     color: #333;
     font-size: 14px;
-    transition: all 0.2s ease;
     border-radius: 0 4px 4px 0;
-}
-
-.asignatura-list li:hover {
-    background: #f0f4f8;
-    border-left-color: #1a3a5c;
-    transform: translateX(5px);
 }
 
 /* ===== AREAS DE ASIGNATURAS OPTATIVAS ===== */
@@ -1117,13 +1061,6 @@ body {
     border-left: 3px solid #e8a020;
     border-radius: 0 6px 6px 0;
     padding: 16px 18px;
-    transition: all 0.2s ease;
-}
-
-.optativa-area-item:hover {
-    background: #f0f4f8;
-    border-left-color: #1a3a5c;
-    transform: translateX(5px);
 }
 
 .optativa-area-item h5 {
@@ -1241,14 +1178,8 @@ body {
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
     border-bottom: 3px solid #e8a020;
     width: 100%;
-}
-
-.btn-enviar:hover {
-    background-color: #2a5a8c;
-    transform: translateY(-1px);
 }
 
 .contacto-info {
@@ -1311,9 +1242,6 @@ body {
     text-decoration: none;
 }
 
-.info-item a:hover {
-    color: #e8a020;
-}
 
 .contacto-foto-bloque {
     background: #fff;
@@ -1476,9 +1404,6 @@ body {
     border-bottom: none;
 }
 
-.tabla-acervo tbody tr:hover td {
-    background-color: #f5f8fc;
-}
 
 .acervo-num a {
     display: inline-block;
@@ -1491,12 +1416,6 @@ body {
     line-height: 32px;
     border-radius: 50%;
     text-decoration: none;
-    transition: background-color 0.2s, transform 0.1s;
-}
-
-.acervo-num a:hover {
-    background-color: #1a3a5c;
-    transform: scale(1.1);
 }
 
 .tabla-acervo-cuatrimestral tbody td:first-child {
@@ -1609,9 +1528,6 @@ body {
     text-decoration: none;
 }
 
-.academico-correo a:hover {
-    color: #e8a020;
-}
 
 /* ── Divisor entre secciones de planta académica ── */
 .seccion-divisor {
@@ -1668,10 +1584,4 @@ body {
     color: #1a3a5c;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.2s;
-}
-
-.semblanza-link:hover {
-    color: #e8a020;
-    text-decoration: underline;
 }
